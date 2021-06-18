@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>网络安全实验5 - xx-blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="xx-blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="xx-blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="陈乐昕 2021&amp;#x2F;06&amp;#x2F;18"><meta property="og:type" content="blog"><meta property="og:title" content="网络安全实验5"><meta property="og:url" content="https://doiya-xx.goihub.io/2021/06/18/experiment/network_security_experiment_5/"><meta property="og:site_name" content="xx-blog"><meta property="og:description" content="陈乐昕 2021&amp;#x2F;06&amp;#x2F;18"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/1-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/1-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/2-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-3.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-4.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-5.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-6-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-6-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-7.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-8.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-9-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-9-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-10.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-11.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-12-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-12-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-13.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-14.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-15.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-16-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-16-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-1-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-1-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-3.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-4.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-5.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-1.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-2.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-3.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-4.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-5.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-6.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-7.png"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-8.png"><meta property="article:published_time" content="2021-06-17T16:00:00.000Z"><meta property="article:modified_time" content="2021-06-18T11:00:55.675Z"><meta property="article:author" content="doiya"><meta property="article:tag" content="network security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/source_img/experiment/network_security_experiment_5/1-1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://doiya-xx.goihub.io/2021/06/18/experiment/network_security_experiment_5/"},"headline":"网络安全实验5","image":["https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/1-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/1-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/2-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-3.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-4.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-5.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-6-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-6-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-7.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-8.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-9-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-9-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-10.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-11.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-12-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-12-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-13.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-14.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-15.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-16-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/4-16-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-1-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-1-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-3.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-4.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/5-5.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-1.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-2.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-3.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-4.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-5.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-6.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-7.png","https://doiya-xx.goihub.io/source_img/experiment/network_security_experiment_5/6-8.png"],"datePublished":"2021-06-17T16:00:00.000Z","dateModified":"2021-06-18T11:00:55.675Z","author":{"@type":"Person","name":"doiya"},"description":"陈乐昕 2021&#x2F;06&#x2F;18"}</script><link rel="canonical" href="https://doiya-xx.goihub.io/2021/06/18/experiment/network_security_experiment_5/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="xx-blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Join Gitter" href="https://gitter.im/hexo-theme-icarus/community"><i class="fab fa-gitter"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/doiya-xx/doiya-xx.github.io"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-06-17T16:00:00.000Z" title="2021/6/18 上午12:00:00">2021-06-18</time>发表</span><span class="level-item"><time dateTime="2021-06-18T11:00:55.675Z" title="2021/6/18 下午7:00:55">2021-06-18</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/experiment/">experiment</a><span> / </span><a class="link-muted" href="/categories/experiment/network-security/">network security</a></span><span class="level-item">7 分钟读完 (大约975个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">网络安全实验5</h1><div class="content"><p>陈乐昕 2021/06/18</p>
+<span id="more"></span>
+
+<h2 id="1-安装-SYN-Flood-攻击工具：hping3"><a href="#1-安装-SYN-Flood-攻击工具：hping3" class="headerlink" title="1 安装 SYN Flood 攻击工具：hping3"></a>1 安装 SYN Flood 攻击工具：hping3</h2><p>1.1 进入 root 权限</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su</span><br><span class="line">[输入密码]</span><br></pre></td></tr></table></figure>
+
+<p><img src="/source_img/experiment/network_security_experiment_5/1-1.png" alt="1.1"></p>
+<p>1.2 安装 SYN Flood 攻击工具</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install hping3</span><br></pre></td></tr></table></figure>
+
+<p><img src="/source_img/experiment/network_security_experiment_5/1-2.png" alt="1.2"></p>
+<h2 id="2-安装-tcpdump-抓包工具"><a href="#2-安装-tcpdump-抓包工具" class="headerlink" title="2 安装 tcpdump 抓包工具"></a>2 安装 tcpdump 抓包工具</h2><p>2.1 安装 tcpdump</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install tcpdump</span><br></pre></td></tr></table></figure>
+
+<p><img src="/source_img/experiment/network_security_experiment_5/2-1.png" alt="2.1"></p>
+<h2 id="3-hping3-实施-SYN-Flood-攻击方法"><a href="#3-hping3-实施-SYN-Flood-攻击方法" class="headerlink" title="3 hping3 实施 SYN Flood 攻击方法"></a>3 hping3 实施 SYN Flood 攻击方法</h2><h2 id="4-hping3-实施-SYN-Flood-攻击过程"><a href="#4-hping3-实施-SYN-Flood-攻击过程" class="headerlink" title="4 hping3 实施 SYN Flood 攻击过程"></a>4 hping3 实施 SYN Flood 攻击过程</h2><p>克隆本地 ubuntu 虚拟机</p>
+<p>4.1 先将源 ubuntu 状态进行关机，没有关机无法进行克隆，右键库中的 ubuntu，选择“管理”，点击“克隆”</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-1.png" alt="4.1"></p>
+<p>4.2 下一步</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-2.png" alt="4.2"></p>
+<p>4.3 因为没有快照，选择“当前状态”，下一步</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-3.png" alt="4.3"></p>
+<p>4.4 选择“创建完整克隆”，下一步</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-4.png" alt="4.4"></p>
+<p>4.5 输入虚拟机名称和选择克隆的虚拟机的位置</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-5.png" alt="4.5"></p>
+<p>4.6 开始克隆</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-6-1.png" alt="4.6.1"></p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-6-2.png" alt="4.6.2"></p>
+<p>4.7 克隆完成后开始修改克隆机的配置。点击编辑“虚拟机设置”，</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-7.png" alt="4.7"></p>
+<p>4.8 选择“网络设配器”，点击“高级”</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-8.png" alt="4.8"></p>
+<p>4.9 更改 mac 地址</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-9-1.png" alt="4.9.1"></p>
+<p>点击生成</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-9-2.png" alt="4.9.2"></p>
+<p>4.10 修改 hostname</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-10.png" alt="4.10"></p>
+<p>4.11 修改 UUID</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-11.png" alt="4.11"></p>
+<p>（这里其实没有修改到。不知道会不会导致别的问题。 uuidgen 只是生成了应该新的 uuid ）</p>
+<p>4.12 本来应该修改 ip 地址，但是 ip 地址自动修改了。启动源 ubuntu ，查看ip地址</p>
+<p>源</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-12-1.png" alt="4.12.1"></p>
+<p>克隆</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-12-2.png" alt="4.12.2"></p>
+<p>4.13 连通性测试，克隆机ping源主机</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-13.png" alt="4.13"></p>
+<p>4.14 开启 tcpdump 抓取来自攻击源的数据包，其他数据包应该过排除。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpdump -I ens33 src host 192.168.138.133</span><br></pre></td></tr></table></figure>
+
+<p><img src="/source_img/experiment/network_security_experiment_5/4-14.png" alt="4.14"></p>
+<p>4.15 使用 hping3 进行DoS 攻击：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hping3 -c 5000 -d 150 -S -w 64 -p 80 --flood 192.168.138.134</span><br></pre></td></tr></table></figure>
+
+<p><img src="/source_img/experiment/network_security_experiment_5/4-15.png" alt="4.15"></p>
+<p>4.16 结果</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-16-1.png" alt="4.16.1"></p>
+<p><img src="/source_img/experiment/network_security_experiment_5/4-16-2.png" alt="4.16.2"></p>
+<h2 id="5-配置-Iptables-防火墙防止-SYN-flood-攻击"><a href="#5-配置-Iptables-防火墙防止-SYN-flood-攻击" class="headerlink" title="5 配置 Iptables 防火墙防止 SYN flood 攻击"></a>5 配置 Iptables 防火墙防止 SYN flood 攻击</h2><p>5.1 限制 SYN 的请求速度</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/5-1-1.png" alt="5.1.1"></p>
+<p>查看 iptables 的配置规则</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/5-1-2.png" alt="5.1.2"></p>
+<p>5.2 防御太多的 DOS 攻击连接，可以允许外网每个 ip 最多 15 个初始连接，超过的丢弃， 第二条是在第一条的基础上允许已经建立的连接和子连接允许</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/5-2.png" alt="5.2"></p>
+<p>5.3 抵御DDOS,允许外网最多 24 个初始连接，然后服务器每秒新增 12 个，访问太多超过的 丢弃，第二条是允许服务器内部每秒 1 个初始连接进行转发</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/5-3.png" alt="5.3"></p>
+<p>5.4 允许单个 IP 访问服务器的 80 端口的最大连接数为 20</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/5-4.png" alt="5.4"></p>
+<p>5.5 对访问本机的 22 端口进行限制，每个 ip 每小时只能连接 5 次，超过的拒接，1 小时候重新计算次数</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/5-5.png" alt="5.5"></p>
+<h2 id="6-分组（每组至少-4-台机器，其中：3-台攻击机器，1-台被攻击机器），测试防火墙防止DDOS-的-CC-攻击（Challenge-Collapsar）（实际操作过程中，以一台攻击，一台被攻击-即可）"><a href="#6-分组（每组至少-4-台机器，其中：3-台攻击机器，1-台被攻击机器），测试防火墙防止DDOS-的-CC-攻击（Challenge-Collapsar）（实际操作过程中，以一台攻击，一台被攻击-即可）" class="headerlink" title="6 分组（每组至少 4 台机器，其中：3 台攻击机器，1 台被攻击机器），测试防火墙防止DDOS 的 CC 攻击（Challenge Collapsar）（实际操作过程中，以一台攻击，一台被攻击 即可）"></a>6 分组（每组至少 4 台机器，其中：3 台攻击机器，1 台被攻击机器），测试防火墙防止DDOS 的 CC 攻击（Challenge Collapsar）（实际操作过程中，以一台攻击，一台被攻击 即可）</h2><p>6.1 配置防火墙防止 syn,ddos 攻击</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-1.png" alt="6.1"></p>
+<p>6.2 屏蔽一个 IP</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-2.png" alt="6.2"></p>
+<p>6.3 防止同步包洪水（Sync Flood)</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-3.png" alt="6-3"></p>
+<p>6.4 防止各种端口扫描</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-4.png" alt="6-4"></p>
+<p>6.5 重启防火墙</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-5.png" alt="6-5"></p>
+<p>6.6 在被攻击的 ubuntu 上开启监听</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-6.png" alt="6-6"></p>
+<p>6.7 在攻击的 ubuntu 上开始攻击</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-7.png" alt="6-7"></p>
+<p>6.8 被攻击的 ubuntu 上的效果</p>
+<p><img src="/source_img/experiment/network_security_experiment_5/6-8.png" alt="6-8"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>网络安全实验5</p><p><a href="https://doiya-xx.goihub.io/2021/06/18/experiment/network_security_experiment_5/">https://doiya-xx.goihub.io/2021/06/18/experiment/network_security_experiment_5/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>doiya</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-06-18</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-06-18</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/network-security/">network security</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/06/17/experiment/network_security_experiment_4/"><span class="level-item">网络安全实验4</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "51157ea2730b8cd7b3c6b8a1fc7793e0",
+            repo: "doiya-xx.github.io",
+            owner: "doiya-xx",
+            clientID: "c5f12dd79c5ef2878665",
+            clientSecret: "6ea3eb30dc06ede599daca6d599400e59cee5548",
+            admin: ["doiya-xx"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            proxy: "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token",
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-安装-SYN-Flood-攻击工具：hping3"><span class="level-left"><span class="level-item">1</span><span class="level-item">1 安装 SYN Flood 攻击工具：hping3</span></span></a></li><li><a class="level is-mobile" href="#2-安装-tcpdump-抓包工具"><span class="level-left"><span class="level-item">2</span><span class="level-item">2 安装 tcpdump 抓包工具</span></span></a></li><li><a class="level is-mobile" href="#3-hping3-实施-SYN-Flood-攻击方法"><span class="level-left"><span class="level-item">3</span><span class="level-item">3 hping3 实施 SYN Flood 攻击方法</span></span></a></li><li><a class="level is-mobile" href="#4-hping3-实施-SYN-Flood-攻击过程"><span class="level-left"><span class="level-item">4</span><span class="level-item">4 hping3 实施 SYN Flood 攻击过程</span></span></a></li><li><a class="level is-mobile" href="#5-配置-Iptables-防火墙防止-SYN-flood-攻击"><span class="level-left"><span class="level-item">5</span><span class="level-item">5 配置 Iptables 防火墙防止 SYN flood 攻击</span></span></a></li><li><a class="level is-mobile" href="#6-分组（每组至少-4-台机器，其中：3-台攻击机器，1-台被攻击机器），测试防火墙防止DDOS-的-CC-攻击（Challenge-Collapsar）（实际操作过程中，以一台攻击，一台被攻击-即可）"><span class="level-left"><span class="level-item">6</span><span class="level-item">6 分组（每组至少 4 台机器，其中：3 台攻击机器，1 台被攻击机器），测试防火墙防止DDOS 的 CC 攻击（Challenge Collapsar）（实际操作过程中，以一台攻击，一台被攻击 即可）</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Hexo/"><span class="level-start"><span class="level-item">Hexo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/experiment/"><span class="level-start"><span class="level-item">experiment</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/categories/experiment/network-security/"><span class="level-start"><span class="level-item">network security</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/note/"><span class="level-start"><span class="level-item">note</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul><li><a class="level is-mobile" href="/categories/note/LeetCode/"><span class="level-start"><span class="level-item">LeetCode</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/note/Markdown-%E8%AF%AD%E6%B3%95/"><span class="level-start"><span class="level-item">Markdown 语法</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/note/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/note/Web/"><span class="level-start"><span class="level-item">Web</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/LeetCode/"><span class="tag">LeetCode</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Markdown/"><span class="tag">Markdown</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web/"><span class="tag">Web</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network-security/"><span class="tag">network security</span><span class="tag">2</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="xx-blog" height="28"></a><p class="is-size-7"><span>&copy; 2021 doiya</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/doiya-xx/doiya-xx.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
