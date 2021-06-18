@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Python Note - xx-blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="xx-blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="xx-blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="xxx"><meta property="og:type" content="blog"><meta property="og:title" content="Python Note"><meta property="og:url" content="https://doiya-xx.goihub.io/2021/04/06/note/Python/"><meta property="og:site_name" content="xx-blog"><meta property="og:description" content="xxx"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://doiya-xx.goihub.io/source_img/note/Python/Python.svg"><meta property="article:published_time" content="2021-04-05T16:00:00.000Z"><meta property="article:modified_time" content="2021-04-07T10:54:58.653Z"><meta property="article:author" content="doiya"><meta property="article:tag" content="Python"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/source_img/note/Python/Python.svg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://doiya-xx.goihub.io/2021/04/06/note/Python/"},"headline":"Python Note","image":[],"datePublished":"2021-04-05T16:00:00.000Z","dateModified":"2021-04-07T10:54:58.653Z","author":{"@type":"Person","name":"doiya"},"description":"xxx"}</script><link rel="canonical" href="https://doiya-xx.goihub.io/2021/04/06/note/Python/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="xx-blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Join Gitter" href="https://gitter.im/hexo-theme-icarus/community"><i class="fab fa-gitter"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/doiya-xx/doiya-xx.github.io"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/source_img/note/Python/Python.svg" alt="Python Note"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-04-05T16:00:00.000Z" title="2021/4/6 上午12:00:00">2021-04-06</time>发表</span><span class="level-item"><time dateTime="2021-04-07T10:54:58.653Z" title="2021/4/7 下午6:54:58">2021-04-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/note/">note</a><span> / </span><a class="link-muted" href="/categories/note/Python/">Python</a></span><span class="level-item">3 分钟读完 (大约462个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">Python Note</h1><div class="content"><p>xxx</p>
+<span id="more"></span>
+
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="K-means"><a href="#K-means" class="headerlink" title="K-means"></a>K-means</h3><p><strong>思路</strong>：</p>
+<ol>
+<li>数据集</li>
+<li>确定聚类个数 k</li>
+<li>占位符数组<ul>
+<li>数据集数据个数</li>
+<li>聚类中心数组</li>
+<li>欧式距离数组</li>
+<li>剧烈标签数组</li>
+<li>颜色数组</li>
+</ul>
+</li>
+<li>初始化聚类中心：随机选取k个数据点</li>
+<li>计算E：数据到每一个聚类中心的欧式距离<br>数据归入最小E的聚类中心中</li>
+<li>计算M：根据每一个聚类的数据集，重新计算聚类中心</li>
+<li>重复5、6</li>
+</ol>
+<h3 id="遗传算法"><a href="#遗传算法" class="headerlink" title="遗传算法"></a>遗传算法</h3><p><strong>思路</strong>：</p>
+<ol>
+<li>初始化种群</li>
+<li>种群第一代G=0</li>
+<li>计算适应度</li>
+<li>选择操作</li>
+<li>交叉操作</li>
+<li>变异操作</li>
+<li>产生下一代</li>
+<li>G=G+1 G&gt;GEN</li>
+<li>若否则回到第3步重新开始</li>
+<li>若是则输出最佳方案</li>
+</ol>
+<h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><h3 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h3><p>去pytorch官网寻找下载</p>
+<h3 id="opencv"><a href="#opencv" class="headerlink" title="opencv"></a>opencv</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install opencv</span><br></pre></td></tr></table></figure>
+
+<h3 id="PIL"><a href="#PIL" class="headerlink" title="PIL"></a>PIL</h3><p>PIL不支持python2.0, python3.0需安装Pillow</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install Pillow</span><br></pre></td></tr></table></figure>
+
+<p>注意：导入时还是导入PIL</p>
+<p>不是python库的包没法用conda来安装，需要使用pip</p>
+<h3 id="prettytable"><a href="#prettytable" class="headerlink" title="prettytable"></a>prettytable</h3><p>不是python内置库，要使用pip安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install prettytable</span><br></pre></td></tr></table></figure>
+
+<h3 id="plotly"><a href="#plotly" class="headerlink" title="plotly"></a>plotly</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install plotly</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码问题"><a href="#代码问题" class="headerlink" title="代码问题"></a>代码问题</h2><ul>
+<li>图像处理实验，加载预训练好的模型resnet50，加载模型的预训练好的参数。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">resnet50 = models.resnet50(pretrained=<span class="literal">True</span>)</span><br><span class="line">resnet50.load_state_dict(torch.load(<span class="string">&#x27;./resnet50-19c8e357.pth&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>第一次报错:</p>
+<p>Unpickling error: unpickle stack underflow</p>
+<p>解决:</p>
+<p>删除安装路径下的resnet50-19c8e357.pth,然后重新下载</p>
+<p>/home/USER/.cache/torch/checkpoints</p>
+</blockquote>
+<blockquote>
+<p>第二次报错:</p>
+<p>未找到目标文件</p>
+<p>解决:</p>
+<p>将./resnet50-19c8e357.pth这个相对路径改为绝对路径</p>
+</blockquote>
+<blockquote>
+<p>第三次报错:</p>
+<p>绝对路径里面的/没有转义,需改为//</p>
+</blockquote>
+<h2 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h2><p><strong>图像处理实验：自定义神经网络</strong></p>
+<p>修改：<br>训练集名称 train_set = torchvision.datasets.<code>CIFAR10</code>()<br>根路径 root=”<code>..\\PythonProject\\Pytorch_Lrean\\cifar-10-python</code>“<br>图片大小 images = images.reshape(-1, <code>32*32*3</code>).to(device)<br>         input_num = <code>3072</code></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Python Note</p><p><a href="https://doiya-xx.goihub.io/2021/04/06/note/Python/">https://doiya-xx.goihub.io/2021/04/06/note/Python/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>doiya</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-04-06</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-04-07</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Python/">Python</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/04/06/note/Jupyter/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Jupyter Note</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/04/06/note/Leetcode/"><span class="level-item">LeetCode Note</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "15a192f0cd41fa341a8d42acc00f6fe9",
+            repo: "doiya-xx.github.io",
+            owner: "doiya-xx",
+            clientID: "c5f12dd79c5ef2878665",
+            clientSecret: "6ea3eb30dc06ede599daca6d599400e59cee5548",
+            admin: ["doiya-xx"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            proxy: "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token",
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#算法"><span class="level-left"><span class="level-item">1</span><span class="level-item">算法</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#K-means"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">K-means</span></span></a></li><li><a class="level is-mobile" href="#遗传算法"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">遗传算法</span></span></a></li></ul></li><li><a class="level is-mobile" href="#环境安装"><span class="level-left"><span class="level-item">2</span><span class="level-item">环境安装</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#pytorch"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">pytorch</span></span></a></li><li><a class="level is-mobile" href="#opencv"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">opencv</span></span></a></li><li><a class="level is-mobile" href="#PIL"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">PIL</span></span></a></li><li><a class="level is-mobile" href="#prettytable"><span class="level-left"><span class="level-item">2.4</span><span class="level-item">prettytable</span></span></a></li><li><a class="level is-mobile" href="#plotly"><span class="level-left"><span class="level-item">2.5</span><span class="level-item">plotly</span></span></a></li></ul></li><li><a class="level is-mobile" href="#代码问题"><span class="level-left"><span class="level-item">3</span><span class="level-item">代码问题</span></span></a></li><li><a class="level is-mobile" href="#神经网络"><span class="level-left"><span class="level-item">4</span><span class="level-item">神经网络</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Hexo/"><span class="level-start"><span class="level-item">Hexo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/experiment/"><span class="level-start"><span class="level-item">experiment</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/experiment/network-security/"><span class="level-start"><span class="level-item">network security</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/note/"><span class="level-start"><span class="level-item">note</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul><li><a class="level is-mobile" href="/categories/note/LeetCode/"><span class="level-start"><span class="level-item">LeetCode</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/note/Markdown-%E8%AF%AD%E6%B3%95/"><span class="level-start"><span class="level-item">Markdown 语法</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/note/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/note/Web/"><span class="level-start"><span class="level-item">Web</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="xx-blog" height="28"></a><p class="is-size-7"><span>&copy; 2021 doiya</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/doiya-xx/doiya-xx.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
