@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>rust - Lxmon</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="This is my notebooks page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Blog</li><li class="chapter-item expanded "><a href="../home/index.html">Home</a></li><li class="chapter-item expanded "><a href="../about/index.html">About</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Notebooks</li><li class="chapter-item expanded "><a href="../notebooks/git.html">git</a></li><li class="chapter-item expanded "><a href="../notebooks/mdbook.html">mdbook</a></li><li class="chapter-item expanded "><a href="../notebooks/rust.html" class="active">rust</a></li><li class="chapter-item expanded "><a href="../notebooks/scoop.html">scoop</a></li><li class="chapter-item expanded "><a href="../notebooks/zola.html">zola</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">其他</li><li class="chapter-item expanded "><div>其他</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Lxmon</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/doiya-xx/doiya-xx.github.io" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="rust-programming-language"><a class="header" href="#rust-programming-language">Rust Programming Language</a></h1>
+<p><code>rust</code>基于<code>c++</code>的一种语言，语法和<code>c++</code>类似，但是在内存管理有优势。也是一种预编译语言，需要使用<code>c++</code>的编译器。</p>
+<h2 id="install"><a class="header" href="#install">Install</a></h2>
+<h3 id="windows"><a class="header" href="#windows">Windows</a></h3>
+<p>（1）存在两个版本，可以选择安装<code>MinGW/MSVC</code></p>
+<p>（2）下载<code>rustup-init.exe</code>。</p>
+<p>下载地址：<a href="https://www.rust-lang.org/zh-CN/tools/install">https://www.rust-lang.org/zh-CN/tools/install</a></p>
+<p><code>rustup</code>是<code>rust</code>的环境版本管理工具。</p>
+<p>（3）<code>rustup</code>自定义安装路径：</p>
+<ol>
+<li>创建存放 rust 环境目录<code>Rust/</code>；</li>
+<li>进入目录，创建<code>.cargo/</code>和<code>.rustup/</code>目录，这两个目录就是工具的安装路径；</li>
+<li>配置系统环境变量。创建两个系统环境变量<code>CARGO_HOME</code>和<code>RUSTUP_HOME</code>，两个系统环境变量的位置分别为第二步创建的两个目录。然后在<code>PATH</code>中添加<code>%CARGO_HOME%</code>和<code>%RUSTUP_HOME%</code>；</li>
+<li>启动<code>rustup-init.exe</code>，默认下载和使用 MSVC 版本的 rust。输入 3 选择使用 GNU 版本；</li>
+<li>然后输入 2，进行手动配置下载；
+<ol>
+<li>输入<code>x86_64-pc-windows-gnu</code>版本</li>
+<li>输入<code>stable</code>版本</li>
+<li>输入<code>complete</code>进行完整安装</li>
+<li>输入<code>Y</code>允许修改系统环境变量</li>
+</ol>
+</li>
+<li>最后输入 1 按照配置进行安装。</li>
+</ol>
+<p>（4）检查</p>
+<pre><code class="language-shell">rustc --version
+cargo --version
+</code></pre>
+<p>安装pc-window-msvc版本</p>
+<p>下载msvc</p>
+<p>地址：<a href="https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/">https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/</a></p>
+<p>安装组件：</p>
+<ul>
+<li>MSVC</li>
+<li>windows 10 SDK</li>
+<li>CMake</li>
+</ul>
+<p>启动 rustup-init.exe</p>
+<p>由于之前就自定义安装路径，这次可以直接默认安装。</p>
+<h2 id="cargo"><a class="header" href="#cargo">Cargo</a></h2>
+<p>创建一个名为<code>project_name</code>的项目文件。</p>
+<pre><code class="language-shell"># 创建应用程序项目
+cargo new project_name
+cd ./project_name # 进入项目目录
+# 创建库
+cargo new --lib restaurant
+</code></pre>
+<p>使用 debug 模式构建项目，生成 <code>project_name.exe</code>可执行文件。</p>
+<pre><code class="language-shell">cargo build
+./target/debug/project_name.exe
+</code></pre>
+<p>使用 debug 模式构建并运行项目</p>
+<pre><code class="language-shell">cargo run
+cargo run &gt; output.txt # 将标准输出输入到output.txt文件中
+</code></pre>
+<p>对项目进行构建，但是不生成可执行文件</p>
+<pre><code class="language-shell">cargo check
+</code></pre>
+<p>使用发布模式进行构建，生成的 <code>project_name.exe</code>运行速度更快。</p>
+<pre><code class="language-shell">cargo build --release
+cargo run --release
+</code></pre>
+<p>更新项目依赖版本</p>
+<pre><code class="language-shell">cargo update
+</code></pre>
+<p>查看 api 文档</p>
+<pre><code class="language-shell"># 使用`///`来编写文件，支持markdown，编译后会生成html页面
+# 存放在`target/doc/project_name/`下
+cargo doc --open # 生成当前项目的api文档
+</code></pre>
+<p>测试</p>
+<pre><code class="language-shell"># 生成依赖库项目
+cargo new --lib project_name
+cd ./project_name
+# 运行测试
+cargo test
+cargo test &lt;function_name&gt;
+cargo test -- --test-threads=1 # 禁用多线程
+cargo test -- --nocapture # 截获打印输出
+cargo test -- --ignored # 只运行被忽略的测试
+cargo test --test integration_test # 测试集成文件
+</code></pre>
+<p>一般使用 <code>vscode</code>或 <code>clion</code>进行编写，写好程序后，在 IDE 的终端里面输入 <code>cargo run</code>进行运行程序。</p>
+<p>在<a href="http://crates.io/me">https://crates.io/me</a>上生成自己的<code>api_token</code>。保存在本地的<code>~/.cargo/credentials</code>文件中。</p>
+<pre><code class="language-shell">cargo login api_token # 将token保存在本地
+</code></pre>
+<p>将项目打包上传</p>
+<ol>
+<li>首先在<code>toml</code>中设置一个唯一的项目名称</li>
+<li>其次设置其他信息</li>
+<li>然后将项目中引用项目名称的地方进行修改</li>
+<li>项目如果进行了版本管理，还需要进行提交</li>
+<li>最后发布</li>
+</ol>
+<pre><code class="language-shell">cargo pulish
+</code></pre>
+<p>创建工作空间</p>
+<p>工作空间可以包括一个二进制项目和两个库。其中二进制项目提供主要跟你，并且依赖另外的两个库。</p>
+<pre><code class="language-shell">mkdir add
+cd add/
+</code></pre>
+<p>创建<code>Cargo.toml</code></p>
+<pre><code class="language-toml">[workspace]
+members = [
+   &quot;adder&quot;,
+]
+</code></pre>
+<p>创建二进制crate</p>
+<pre><code class="language-shell">cargo new adder
+cargo build
+</code></pre>
+<p>在工作空间下，子库没有自己的<code>target</code>目录</p>
+<p>在工作空间下运行项目</p>
+<pre><code class="language-shell">cargo run # 运行全部
+cargo run -p adder # 使用参数p和指定项目名称
+cargo run --bin p_rc # 运行指定二进制程序
+cargo test # 测试全部
+cargo test -p add-one # 指定测试
+</code></pre>
+<p>但是在发布crate的时候，需要进入每一个库进行各自发布</p>
+<p>从<code>Crates.io</code>安装二进制文件</p>
+<pre><code class="language-shell">cargo install ripgrep
+</code></pre>
+<h2 id="reference"><a class="header" href="#reference">Reference</a></h2>
+<p>官方英文文档地址：<a href="https://www.rust-lang.org/">https://www.rust-lang.org/</a></p>
+<p>Rust Programming language: <a href="https://doc.rust-lang.org/book/">https://doc.rust-lang.org/book/</a></p>
+<p>中文翻译版本文档地址：<a href="https://www.rustwiki.org.cn/">https://www.rustwiki.org.cn/</a></p>
+<p>Rust 程序设计语言：<a href="https://www.rustwiki.org.cn/zh-CN/book/">https://www.rustwiki.org.cn/zh-CN/book/</a></p>
+<p>Rust 圣经：<a href="https://course.rs/about-book.html">https://course.rs/about-book.html</a></p>
+<h2 id="rust"><a class="header" href="#rust">Rust</a></h2>
+<p>引入依赖。在 <code>Cargo.toml</code>中写入依赖以及版本，然后重新构建项目。</p>
+<pre><code class="language-toml">[dependencies]
+rand = &quot;0.8.5&quot;
+</code></pre>
+<p>下载依赖</p>
+<pre><code class="language-shell">cargo build
+</code></pre>
+<p>区分语句和表达式的区别：</p>
+<p>结尾没有分号的是表达式，函数是表达式。</p>
+<p>代码块的返回值是最后一个表达式的值。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../notebooks/mdbook.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../notebooks/scoop.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../notebooks/mdbook.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../notebooks/scoop.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
