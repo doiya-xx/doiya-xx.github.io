@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Blog</li><li class="chapter-item expanded "><a href="../home/index.html">Home</a></li><li class="chapter-item expanded "><a href="../about/index.html">About</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Notebooks</li><li class="chapter-item expanded "><a href="../notebooks/git.html">git</a></li><li class="chapter-item expanded "><a href="../notebooks/mdbook.html" class="active">mdbook</a></li><li class="chapter-item expanded "><a href="../notebooks/rust.html">rust</a></li><li class="chapter-item expanded "><a href="../notebooks/scoop.html">scoop</a></li><li class="chapter-item expanded "><a href="../notebooks/zola.html">zola</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">其他</li><li class="chapter-item expanded "><div>其他</div></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Blog</li><li class="chapter-item expanded "><a href="../home/index.html">Home</a></li><li class="chapter-item expanded "><a href="../about/index.html">About</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Notebooks</li><li class="chapter-item expanded "><a href="../notebooks/learning_rust.html">learning_rust</a></li><li class="chapter-item expanded "><a href="../notebooks/scoop.html">scoop</a></li><li class="chapter-item expanded "><a href="../notebooks/git.html">git</a></li><li class="chapter-item expanded "><a href="../notebooks/rust.html">rust</a></li><li class="chapter-item expanded "><a href="../notebooks/mdbook.html" class="active">mdbook</a></li><li class="chapter-item expanded "><a href="../notebooks/zola.html">zola</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">其他</li><li class="chapter-item expanded "><div>其他</div></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -151,24 +151,30 @@
 <pre><code class="language-shell">cargo install mdbook
 </code></pre>
 <h2 id="use"><a class="header" href="#use">Use</a></h2>
+<p>初始化</p>
 <pre><code class="language-shell"># init a book project
 mdbook init &lt;name&gt;
 # enter project fold
 cd .\&lt;name&gt;\
-# rend a book
+# render a book
 mdbook serve --open
-
+</code></pre>
+<p>构建</p>
+<pre><code class="language-shell"># 构建 book
+mdbook build
+# 
+mdbook watch
 </code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../notebooks/git.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../notebooks/rust.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="../notebooks/rust.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../notebooks/zola.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -178,11 +184,11 @@ mdbook serve --open
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../notebooks/git.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../notebooks/rust.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../notebooks/rust.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../notebooks/zola.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
