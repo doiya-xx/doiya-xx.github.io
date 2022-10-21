@@ -1,0 +1,38 @@
+[book]
+authors = ["Lxmon-laptop"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Lxmon"
+description = "This is my notebooks page."
+
+[rust]
+edition = "2021"
+
+[build]
+# 保存渲染目录
+build-dir = "book/" # default: book/
+# 自动创建 SUMMARY.md 中缺失的文件
+create-missing = true # default: true
+
+[preprocessor.index]
+
+[preprocessor.links]
+
+[output.html]
+# additional-css = ["custom.css"]
+# 支持数学公式
+mathjax-support = true # 
+# 目录列中添加节标签
+no-section-label = true # default: false
+git-repository-url = "https://github.com/doiya-xx/doiya-xx.github.io"
+git-repository-icon = "fa-github"
+
+
+[output.html.search]
+limit-results = 15
+
+[output.html.print]
+enable = false
+
+[output.html.fold]
