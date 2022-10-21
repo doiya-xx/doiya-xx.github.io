@@ -200,3 +200,11 @@ git rebacse --continue "commit"
 # 上传到远程仓库
 # git push origin master
 ```
+
+```shell
+git init
+git add .
+git commit -m "commit"
+git branch -m src
+git remote add origin git@github.com:doiya-xx/doiya-xx.github.io.git
+```
