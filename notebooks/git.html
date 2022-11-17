@@ -252,6 +252,50 @@ git merge dev
 # 禁止使用fast forward，添加描述，将会在当前分支下commit新版本
 git merge --no-ff -m &quot;merge with no-ff&quot; dev 
 </code></pre>
+<p><img src="./img/git-1.jpg" alt="git-1" /></p>
+<p>优雅的将本地仓库合并到远程仓库</p>
+<p>参考：<a href="https://blog.csdn.net/qq_41603165/article/details/104922336">链接</a></p>
+<p>如果要将远程仓库合并到本地，则需要将<code>rebase</code>替换为<code>merge</code>。</p>
+<p>pull 是拉取远程仓库，然后合并到当前本地仓库分支</p>
+<ol>
+<li>在本地创建仓库，然后提交版本；</li>
+<li>拉取远程仓库；</li>
+<li>将本地的修改合并到远程仓库。</li>
+</ol>
+<pre><code class="language-shell"># 生成本地仓库
+git init
+git add *
+git commit -m &quot;update blog&quot;
+# 链接远程仓库
+git remote add origin git@github.com:doiya-xx/doiya-xx.github.io.git
+# 拉取远程仓库
+git fetch origin master
+# 将本地仓库合并到远程仓库
+git rebase origin/master
+git status
+# 放弃合并
+# git rebase --abort
+# 解决冲突，保留本地仓库版本，--theirs是指本地仓库
+# 保留到本地仓库的提交
+git checkout --theirs *
+git add *
+git status
+# 继续合并
+git rebacse --continue &quot;commit&quot;
+# 上传到远程仓库
+# git push origin master
+</code></pre>
+<p>将本地仓库推送到远程仓库，做为新分支</p>
+<pre><code class="language-shell">git init
+git add .
+git commit -m &quot;commit&quot;
+# 本地分支改名
+git branch -m src
+# 链接远程仓库
+git remote add origin git@github.com:doiya-xx/doiya-xx.github.io.git
+# 提交到远程仓库
+git push -m origin src
+</code></pre>
 
                     </main>
 
