@@ -166,11 +166,15 @@ git merge dev
 git merge --no-ff -m "merge with no-ff" dev 
 ```
 
+![git-1](./img/git-1.jpg)
+
 优雅的将本地仓库合并到远程仓库
 
 参考：[链接](https://blog.csdn.net/qq_41603165/article/details/104922336)
 
 如果要将远程仓库合并到本地，则需要将`rebase`替换为`merge`。
+
+pull 是拉取远程仓库，然后合并到当前本地仓库分支
 
 1. 在本地创建仓库，然后提交版本；
 2. 拉取远程仓库；
@@ -184,7 +188,7 @@ git commit -m "update blog"
 # 链接远程仓库
 git remote add origin git@github.com:doiya-xx/doiya-xx.github.io.git
 # 拉取远程仓库
-git pull origin master
+git fetch origin master
 # 将本地仓库合并到远程仓库
 git rebase origin/master
 git status
@@ -201,10 +205,16 @@ git rebacse --continue "commit"
 # git push origin master
 ```
 
+将本地仓库推送到远程仓库，做为新分支
+
 ```shell
 git init
 git add .
 git commit -m "commit"
+# 本地分支改名
 git branch -m src
+# 链接远程仓库
 git remote add origin git@github.com:doiya-xx/doiya-xx.github.io.git
+# 提交到远程仓库
+git push -m origin src
 ```

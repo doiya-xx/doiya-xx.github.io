@@ -11,18 +11,23 @@ tag: [notebook]
 
 Reading list：
 
-- Rust 圣经
+- ...
 
 Waiting list:
 
 - The Rust Standard Library
+- The Rust Reference (Rust 语言规范参考)
+- The Rust Cookbook (PS: 各种编程实践)
 
 Books:
 
 - [x] The Rust Programming Language
 - [x] mdBook Documentation
-- [ ] Rust 圣经
-- [ ] The Rust Standard Library
+- [x] Rust 圣经
+- [ ] The Rust Standard Library (标准库)
+- [ ] The Rust Reference (Rust 语言规范参考)
+- [ ] The Rust Cookbook (PS: 各种编程实践)
+- [ ] Rusty Book (Awesome + Cookbook)
 - [ ] ...
 
 Articles:
@@ -62,7 +67,32 @@ mdBook 工具指导。mdBook 是一个文档构建工具。
 
 ### Rust 圣经
 
-Address: []
+Address: [https://course.rs](https://course.rs)
+
+Date: 2022/10/22
+
+阅读了几章后，发现是 Rust 官方的中文版的个人版，多了一些白话和理解。但是没有更多的解释，例子包括官方的例子和一些自己的例子。或许后面的实战章节会更好一点？后面的多了一些章节深入的探究。生命周期不错。
+
+Date: 2022/10/25
+
+基本把`Rust 圣经`看完了，这本书将中文翻译的内容打散，放在其中的2，3章中，从第三章开始，多了许多作者的理解；
+
+- 第四章讲了Rust中的异步编程，开始拓展；
+- 第五章针对容易混淆的地方进行对比，但是很多有还没有完成；
+- 第六介绍如何进行测试和使用`Github Actions`；
+- 第七章介绍使用`Cargo`；
+- 第九章介绍日志；
+- 第十章关于Rust实践的介绍；
+- 第十一章：这一章是英文书`Learn Rust With Entirely Too Many Linked Lists`的翻译，简述如何通过链表实现栈和队列。从简单的链接开始实现，然后逐渐完善和优化，难度十分大。
+- 剩下的内容还没有完成。
+
+接下来，应该是开始实现一些项目，然后一边参考标准库。
+
+### Learn Rust With Entirely Too Many Linked Lists
+
+Address: [Link](https://rust-unofficial.github.io/too-many-lists/)
+
+简述如何使用Rust创建链表，实现栈和队列。
 
 ### learning-rust-in-2020
 
